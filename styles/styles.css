@@ -5,9 +5,7 @@
   margin: 0;
   padding: 0;
 }
-/* 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900 */
+
 
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -30,13 +28,20 @@
   font-size: 1.2rem;
   padding: 1rem 2.5rem;
 }
+.btn-download{
+  background-color: rgb(4, 4, 4);
+  border: 2px solid white;
+  border-radius: 2.5rem;
+  color: aliceblue;
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  margin-left: 1rem;
 
-.body {
-  max-width: 1440px;
 }
 
-.display-hidden {
-  display: none;
+.body {
+  /* max-width: 1440px; */
+  margin: 0 auto;
 }
 
 .icon {
@@ -44,15 +49,23 @@
   display: none;
 }
 
+.gray-description{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+
+}
+
 .header {
   width: 100%;
   background: linear-gradient(
     180deg,
     rgb(17, 17, 17),
-    rgba(119, 119, 119, 0) 100%
+    rgba(7, 7, 7, 0) 100%
   );
 }
 
+
+/* navbar section starts here */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -83,102 +96,94 @@
   padding: 0.5rem 1rem;
   border-radius: 2.75rem;
 }
+/* navbar section ends here */
+
+
+
 
 /* hero section */
 
-.hero {
+.hero-container {
   display: flex;
   justify-content: space-between;
-
   padding: 0 4rem;
   margin: 0 3rem;
+
 }
 
-.hero-contant {
-  width: 32.5rem;
-  height: 27.5rem;
+.hero-info{
+  width:37.5rem ;
+  height:25rem ;
 }
-.hero-title {
+
+#hero-title{
+  color:white;
   font-size: 5rem;
-  font-weight: 900;
-  color: aliceblue;
+  font-weight: bold;
 }
 
-.hero-contant > p {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1rem;
-  list-style: 1.5rem;
-  margin-bottom: 1rem;
-}
-#btn-download {
-  background-color: black;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 2.5rem;
-  color: aliceblue;
-  font-size: 1.2rem;
-  padding: 1rem 2.5rem;
+
+.buttons{
+  margin-top: 1rem;
 }
 
-.hero-img {
-  width: 21.9rem;
-  height: 30.25rem;
+
+
+.hero-img{
+  width: 21rem;
+  height:34rem ;
 }
-.hero-img > img {
+.hero-img img{
+  width: 100%;
   height: 100%;
+  position:relative;
 }
-
-#round {
+.reddot{
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 50%;
-  background-color: rgb(230, 83, 60);
+  background: red;
 }
 
-.video {
+.tutorial{
+ 
+  background: rgba(48, 48, 48, 0.54);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
   display: flex;
   gap: 1rem;
-  width: 10.75rem;
-  height: 4rem;
-  color: white;
-
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: rgba(48, 48, 48, 0.54);
-  border-radius: 0.8rem;
-  opacity: 0.7;
-  padding: 1.5rem;
-  position: relative;
   align-items: center;
-  left: -8rem;
-  bottom: 10rem;
+  position:absolute;
+  bottom: 3rem;
+  right:24rem
 }
-.workout {
-  width: 11rem;
-  height: 4rem;
-  color: aliceblue;
+.tutorial-info{
+  color:white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  
+}
 
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: rgba(48, 48, 48, 0.54);
-  border-radius: 0.8rem;
-  opacity: 0.7;
-  padding: 1.5rem;
-  position: relative;
-  align-items: center;
-  right: -12rem;
-  top: -500px;
+.videos{
+  background: rgba(48, 48, 48, 0.54);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 10rem;
+  position:absolute;
+  top:18rem;
+  right: 4rem;
+  
 }
-.workout > h3 {
-  font-size: 2rem;
-}
-.video > div > p {
-  color: rgba(255, 255, 255, 0.5);
-}
-.workout > p {
-  color: rgba(255, 255, 255, 0.5);
+.videos h2{
+  color:white;
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 /* Responsive for Mobile */
 
-@media screen and (max-width: 572px) {
+@media screen and (max-width: 576px) {
+  
   .menu > ul {
     display: none;
   }
@@ -188,89 +193,57 @@
   .navbar {
     margin-left: 0;
   }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin: 0 1rem;
 
-  .hero {
+  }
+
+  .hero-container {
     display: flex;
     flex-direction: column;
     padding: 0 1rem;
-    margin: 0 3rem;
+    margin: 1rem 1rem;
   }
 
-  .buttons {
-    display: flex;
-    gap: 2rem;
+  .hero-info{
+    width:20rem ;
+    height:18rem ;
+    
   }
 
-  #btn-download {
-    background-color: black;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 2.5rem;
-    color: aliceblue;
-    font-size: 1rem;
-    padding: 1rem 2rem;
-  }
-  .btn-primary {
-    background-color: rgb(230, 83, 60);
-    border: none;
-    border-radius: 2.5rem;
-    color: aliceblue;
-    font-size: 1rem;
-    padding: 1rem 2.5rem;
-  }
-
-  .hero-contant {
-    width: 28rem;
-    height: 18rem;
-  }
-
-  .hero-title {
+  #hero-title{
     font-size: 2.25rem;
   }
 
-  .hero-img {
+  .buttons{
     display: flex;
-    justify-content: center;
+    
+    
+  }
+  .buttons button{
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .btn-download{
     margin-left: 3rem;
   }
 
-  .workout {
-    width: 8rem;
-    height: 2rem;
-    color: aliceblue;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: rgba(48, 48, 48, 0.54);
-    border-radius: 0.8rem;
-    opacity: 0.7;
-    padding: 1rem;
-    position: relative;
-    align-items: center;
-    right: -15rem;
-    top: -28rem;
+  .tutorial{
+    background: rgba(48, 48, 48, 0.54);
+    width: 155px;
+    position:absolute;
+    bottom: -12rem;
+    left: 1rem;
   }
-  .video {
-    width: 8rem;
-    height: 2rem;
-    color: aliceblue;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    background-color: rgba(48, 48, 48, 0.54);
-    border-radius: 0.8rem;
-    opacity: 0.7;
-    padding: 1rem;
-    position: relative;
-    align-items: center;
-    left: 0.5rem;
-    bottom: 6rem;
+  .videos{
+    top:24rem;
+    left:13rem
   }
-  .workout > h3 {
-    font-size: 1rem;
-  }
-  .workout > p {
-    font-size: 0.8em;
-  }
-  .video > h3 {
-    font-size: 1rem;
-  }
-  .video > p {
-    font-size: 0.8em;
-  }
+
+  
 }
