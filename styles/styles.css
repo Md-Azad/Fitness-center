@@ -42,6 +42,11 @@
 .body {
   /* max-width: 1440px; */
   margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+.responsive-br {
+  display: inline;
 }
 
 .icon {
@@ -180,6 +185,50 @@
   font-size: 2.5rem;
 }
 
+
+/* Habit section starts here */
+
+  .habit                                 {
+    background: rgb(0, 0, 0);
+    padding-top: 3rem;
+  }
+
+  .habit-title{
+    color:aliceblue;
+    font-size: 3rem;
+    text-align: center;
+
+  }
+  .habit-subtitle{
+    color:rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    text-align: center;
+  }
+
+
+  .circle-imgs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+  }
+  .circle-img-card{
+    text-align: center;
+  }
+
+  .circle-img-card img{
+    border:1px solid white;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+  .circle-img-card h3{
+    color:aliceblue;
+    font-size: 1rem;
+  
+  }
+
+/* Habit section ends here */
+
 /* Responsive for Mobile */
 
 @media screen and (max-width: 576px) {
@@ -244,6 +293,34 @@
     top:24rem;
     left:13rem
   }
+
+  /* habit section responsiveness starts here */
+
+  .responsive-br{
+    display: none;
+  }
+
+  .habit{
+    padding-top: 1rem;
+  }
+
+  .habit-title{
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .circle-imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .circle-img-card{
+    text-align: center;
+    margin: 1rem 0;
+  }
+  /* habit section responsiveness ends here */
 
   
 }
