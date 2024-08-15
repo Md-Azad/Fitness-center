@@ -549,6 +549,59 @@
 
 /* Team section's style ends here */
 
+/* Footer style starts here */
+
+.footer-container{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  
+}
+  .logo h1{
+    color:rgb(230, 83, 60);
+    font-size: 4.5rem;
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  .logo p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+  }
+
+  .get-started h1{
+    color:white;
+    font-size: 1.5rem;
+    
+
+  }
+  .get-started h3{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    margin: 1rem 0;
+
+  }
+
+  .line{
+    width: 60%;
+    background-color:rgba(255, 255, 255, 0.5);
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+
+  .right{
+    font-size: 1.25rem;
+    color:rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin: 2rem 0;
+    
+  }
+
+  /* Footer style ends here */
+
 
 
 
@@ -795,6 +848,15 @@
     display: grid;
     grid-template-columns: repeat(1,1fr);
     
+    
+  }
+
+  .footer-container{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
     
   }
 
