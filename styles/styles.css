@@ -241,6 +241,7 @@
     align-items: center;
     border-radius: 1.25rem;
     background-color: rgb(34, 34, 34);
+    margin-bottom: 2rem;
   }
 
   .run-info{
@@ -263,7 +264,6 @@
   .run-img{
     width: 22.75rem;
     height: 19.5rem;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,9 +276,150 @@
 
 /* Run section ends here */
 
+/* training section starts here */
+
+.training-container{
+ 
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+ 
+  
+}
+
+.training-info{
+  width:50%;
+}
+
+.training-title{
+    font-size: 3rem;
+    font-weight: 900;
+    color: aliceblue;
+    padding: 1rem 0;
+}
+
+.training-subtitle{
+  color:rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+  
+}
+.first-row-img{
+ display: grid;
+ grid-template-columns: 1fr 2fr 1fr;
+ color:white;
+}
+
+.training-img-card{
+  height: 13.5rem;
+}
+.training-bg-one {
+  background-image: url('/images/exercise1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(6, 255, 210, 0.5);
+  background-blend-mode: overlay;
+  position:relative;
+}
+.training-bg-two {
+  background-image: url('/images/exercise2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  position: relative;
+}
+.training-bg-three {
+  background-image: url('/images/exercise3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  position: relative;
+}
 
 
 
+.second-row-img{
+  display: grid;
+  grid-template-columns:  2fr 1fr 1fr;
+  color:white;
+ }
+
+ .training-bg-four {
+  background-image: url('/images/exercise4.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  position: relative;
+}
+ .training-bg-five {
+  background-image: url('/images/exercise5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color:  rgba(66, 255, 0, 0.3);
+  background-blend-mode: overlay;
+  position: relative;
+}
+ .training-bg-six {
+  background-image: url('/images/exercise6.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color:  rgba(0, 71, 255, 0.3);
+  background-blend-mode: overlay;
+  position: relative;
+}
+
+.first-row-first-img-title{
+  position:absolute;
+  bottom: 2rem;
+  left:1.25rem;
+  font-size: 0.9rem;
+  color:black;
+}
+.first-row-third-img-title{
+    color:white;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 1.25rem;
+}
+.first-row-second-img-title{
+    color:white;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 2rem;
+    left: 1.25rem;
+}
+
+.second-row-first-img-title{
+  color:white;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 2rem;
+  right: 1.25rem;
+}
+
+.hide{
+  display: inline;
+}
+
+
+
+  
+
+/* training section ends here */
+
+
+/* ------------------------------------- */
 
 /* Responsive for Mobile */
 
@@ -404,6 +545,72 @@
 
 
   /* Run section's responsiveness ends here */
+
+  /* training section's responsiveness starts here */
+
+  .training-info{
+    width:90%;
+  }
+
+  .training-title{
+    font-size: 2rem;
+}
+
+.training-subtitle{
+  padding: 0.1rem 0;
+  
+  
+}
+
+  .hide{
+    display: none;
+  }
+
+  .first-row-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color:white;
+   }
+   .second-row-img{
+    display: grid;
+    grid-template-columns: 47% 53%;
+    color:white;
+   }
+
+   .training-bg-one {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(6, 255, 210, 0.5);
+    background-blend-mode: overlay;
+    position:relative;
+  }
+  .first-row-first-img-title{
+    color:white;
+  }
+
+  .training-bg-two {
+    background-position: 85% 10%;
+  }
+
+  .training-bg-four {
+    background-position: 40% 10%; 
+  }
+
+  .second-row-first-img-title{
+    top:9.5rem;
+    right: 1.25rem;
+  }
+  .training-bg-five {
+    
+    background-position: 60% 30%;
+    background-size: cover;
+    
+  }
+
+
+
+  /* training section's responsiveness ends here */
 
   
 }
