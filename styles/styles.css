@@ -419,6 +419,88 @@
 /* training section ends here */
 
 
+
+/* BMI section starts here */
+
+.bmi-calculation{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+  .bmi-info{
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .bmi-chart-headline{
+    color:white;
+    font-size: 1.75rem;
+  }
+  table{
+    border-collapse: collapse;
+    margin-top: 2rem;
+  }
+  th{
+    color:white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+  }
+  td{
+    color:rgba(255, 255, 255, 0.5);
+    padding: 1rem 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .bmi-caltolator{
+    width: 50%;
+    
+  }
+
+  .bmi-caltolator button{
+    margin-left: 1rem;
+    
+  }
+
+  .bmi-calculator-title{
+    color:white;
+    font-size: 1.75rem;
+  }
+  .bmi-calculator-subtitle{
+    color:rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+  }
+
+  .bmi-inputs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    gap: 1rem;
+    margin: 1rem;
+  }
+  .bmi-inputs select:nth-child(5) {
+    grid-column: span 2;
+    
+  }
+  .bmi-inputs input{
+    color:rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    border:none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  .bmi-inputs select{
+    color:rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    border:none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+/* BMI section ends here */
+
+
+
+
+
 /* ------------------------------------- */
 
 /* Responsive for Mobile */
@@ -611,6 +693,52 @@
 
 
   /* training section's responsiveness ends here */
+
+  /* Bmi section's responsiveness startss here */
+  .bmi-info{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .bmi-calculation{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   
+  }
+
+  .bmi-calculator-title{
+    font-size: 1rem;
+  }
+  .training-title{
+    font-size: 1rem;
+    font-weight: 900;
+
+  }
+  .bmi-caltolator{
+    width: 100%;
+   margin-top: 2rem;
+   
+    
+  }
+  .bmi-inputs{
+    display: grid;
+    grid-template-columns: repeat(2,auto) ;
+    gap: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+
+  }
+
+  .bmi-caltolator button{
+    margin-left: 0;
+    padding: 1rem 6rem;
+    
+    
+  }
+  /* Bmi section's responsiveness ends here */
+
+
 
   
 }
