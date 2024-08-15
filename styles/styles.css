@@ -313,7 +313,7 @@
   height: 13.5rem;
 }
 .training-bg-one {
-  background-image: url('/images/exercise1.jpg');
+  background-image: url('../images/exercise1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -322,7 +322,7 @@
   position:relative;
 }
 .training-bg-two {
-  background-image: url('/images/exercise2.png');
+  background-image: url('../images/exercise2.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -331,7 +331,7 @@
   position: relative;
 }
 .training-bg-three {
-  background-image: url('/images/exercise3.png');
+  background-image: url('../images/exercise3.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -349,7 +349,7 @@
  }
 
  .training-bg-four {
-  background-image: url('/images/exercise4.png');
+  background-image: url('../images/exercise4.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -358,7 +358,7 @@
   position: relative;
 }
  .training-bg-five {
-  background-image: url('/images/exercise5.jpg');
+  background-image: url('../images/exercise5.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -367,7 +367,7 @@
   position: relative;
 }
  .training-bg-six {
-  background-image: url('/images/exercise6.jpg');
+  background-image: url('../images/exercise6.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
